@@ -43,3 +43,9 @@
 /* Slightly taller book while retaining the current full spread width. */
 @media(min-width:761px){.book{width:min(100%,calc((100dvh - 150px)*2.7));aspect-ratio:2.7/1}}
 @media(max-width:760px){.book{width:min(100%,calc((100dvh - 145px)*1.35));aspect-ratio:1.35/1}}
+
+/* Live comparison: optional larger recipe artwork, original files unchanged. */
+.header-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.book.zoomed .recipe-page{overflow:auto;align-items:flex-start;justify-content:flex-start}
+.book.zoomed .recipe-page .original-art{width:112%;height:auto;max-width:none;max-height:none;flex-shrink:0;object-fit:contain;aspect-ratio:auto}
+@media(max-width:760px){.reader-header{align-items:flex-start}.header-actions{gap:5px}.header-actions .toc{font-size:12px;padding:8px 10px}}
