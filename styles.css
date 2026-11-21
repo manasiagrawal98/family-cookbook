@@ -416,3 +416,8 @@ html,body{overflow-x:hidden}
 .book-page.new-index .contents-group-title{margin-bottom:clamp(3px,.4vw,6px)!important}
 .book-page.new-index .contents-header{margin:0 0 clamp(7px,1vw,14px)!important}
 @media(max-width:760px){.book-page.new-index .contents-groups{gap:8px!important}.book-page.new-index .contents-header{margin-bottom:9px!important}}
+
+/* Original user-supplied cover artwork; retain full image without cropping. */
+.book-page.image-cover{position:relative;padding:0!important;overflow:hidden;background:#fff8ed!important}
+.book-page.image-cover .original-art{display:block;width:100%;height:100%;object-fit:contain}
+.book-page.image-cover .cover-image-open{position:absolute;bottom:3%;left:50%;transform:translateX(-50%);z-index:5;white-space:nowrap}
