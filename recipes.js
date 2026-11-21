@@ -19,7 +19,7 @@ const RECIPES = [
   { id: 'creamy-spinach-corn-sandwich', name: 'Creamy Spinach Corn Sandwich', category: 'Sandwiches', image: 'images/Creamy Spinach Corn Sandwich.jpg' },
   { id: 'paneer-toastie', name: 'Paneer Toastie', category: 'Sandwiches', image: 'images/Paneer Toastie.jpg' },
   { id: 'hariyali-soya-chunks-pulav', name: 'Hariyali Soya Chunks Pulav', category: 'Rice Dishes', image: 'images/Hariyali Soya Chunks Pulav.jpg' },
-  { id: 'amritsari-chole', name: 'Amritsari Chole', category: 'Curries and Sabzis', image: 'images/Amritsari Chole.jpg' },
+  { id: 'amritsari-chole', name: 'Amritsari Chole', category: 'Curries and Sabzis', image: 'images/Amritsari Chole.jpg', link: 'https://www.youtube.com/watch?v=_e1hHIbdBUw&t=495s' },
   { id: 'baked-pasta-sauce', name: 'Baked Pasta Sauce', category: 'Around the World', image: 'images/Baked Pasta Sauce.jpg' },
   { id: 'cherry-tomato-basil-pasta', name: 'Cherry Tomato Basil Pasta', category: 'Around the World', image: 'images/Cherry Tomato Basil Pasta.jpg' }
 ];
