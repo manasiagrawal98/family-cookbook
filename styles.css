@@ -134,3 +134,24 @@
 @keyframes spreadForward{from{opacity:.15;transform:translateX(12px)}to{opacity:1;transform:translateX(0)}}
 @keyframes spreadBackward{from{opacity:.15;transform:translateX(-12px)}to{opacity:1;transform:translateX(0)}}
 @media(prefers-reduced-motion:reduce){.turning.forward .book-page,.turning.backward .book-page{animation:none!important}}
+
+/* Clearly illustrated recipe-style contents: watercolor banners, food drawings, stitched binding. */
+.illustrated-contents{border:9px solid #f8efdc;border-radius:18px;background:#fff9eb}
+.contents-leaf{background:radial-gradient(circle at 15% 10%,#fffef8,#fff8e9 80%);padding:clamp(13px,2vw,28px)}
+.contents-left{border-right:1px solid #cbb596}
+.contents-heading{font-family:Caveat,cursive;font-size:clamp(38px,5.8vw,76px);color:#23622c;text-shadow:1px 1px 0 #d3e3b8}
+.contents-intro{display:inline-block;align-self:flex-start;background:#f7d7d2;padding:4px 14px;border-radius:30px;font-size:clamp(12px,1.4vw,19px)}
+.contents-category{display:grid;grid-template-columns:clamp(48px,8vw,110px) minmax(0,1fr);align-items:center;gap:clamp(6px,1vw,14px);background:transparent!important;border:2px dashed #d6a786;border-radius:22px;padding:clamp(7px,1vw,15px);margin:clamp(7px,1.1vw,15px) 0;flex-shrink:0}
+.category-art{font-size:clamp(30px,5vw,68px);text-align:center;filter:drop-shadow(2px 4px 2px #8a63452a);line-height:1.1}
+.category-copy{min-width:0}
+.contents-category h3{display:table;background:#e5edc0;border-radius:35% 45% 40% 30%;padding:2px 12px;margin:0 0 6px;font-size:clamp(19px,2.7vw,37px);line-height:1.05}
+.contents-category.p1 h3,.contents-category.p4 h3{background:#f8d2cc}
+.contents-category.p2 h3,.contents-category.p5 h3{background:#ffe2a1}
+.contents-category.p3 h3,.contents-category.p6 h3{background:#dce8f0}
+.contents-category .recipe-jump{font-family:Caveat,cursive;font-size:clamp(13px,1.55vw,21px);padding:2px 0}
+.contents-soon{font-size:clamp(11px,1.2vw,16px)}
+.contents-vine{color:#5d8c49;font-size:clamp(16px,2vw,27px)}
+.contents-right .contents-note{background:#fbe4c6;border-radius:60%;padding:8px;align-self:center}
+.illustrated-contents:before{left:calc(50% - 13px);width:26px;background:linear-gradient(90deg,transparent,#ad997a50 38%,#e7d5b6 49%,#947c5b66 55%,transparent)!important}
+.illustrated-contents:after{left:calc(50% - 6px);width:12px;background:radial-gradient(ellipse 4px 13px at center 19%,transparent 48%,#9a8364 55%,#9a8364 67%,transparent 75%),radial-gradient(ellipse 4px 13px at center 50%,transparent 48%,#9a8364 55%,#9a8364 67%,transparent 75%),radial-gradient(ellipse 4px 13px at center 81%,transparent 48%,#9a8364 55%,#9a8364 67%,transparent 75%)}
+@media(max-width:760px){.illustrated-contents{border-width:4px;border-radius:10px}.contents-leaf{padding:7px}.contents-category{grid-template-columns:25px minmax(0,1fr);gap:3px;border-width:1px;border-radius:9px;padding:4px;margin:4px 0}.category-art{font-size:21px}.contents-category h3{font-size:clamp(11px,2.5vw,18px);padding:1px 4px;margin-bottom:2px}.contents-category .recipe-jump{font-size:clamp(8px,1.8vw,12px)}.contents-intro{font-size:8px;padding:2px 4px}.contents-heading{font-size:clamp(21px,5vw,35px)}.contents-soon{font-size:8px}.contents-right .contents-note{padding:3px}}
