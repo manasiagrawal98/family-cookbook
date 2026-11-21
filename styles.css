@@ -376,3 +376,23 @@ html,body{overflow-x:hidden}
 .book-page.new-index .contents-group-title h2{font-size:clamp(23px,6.2vw,33px)}
 .book-page.new-index .contents-recipe{font-size:clamp(17px,4.5vw,23px)}
 }
+
+/* Blank illustrated TOC template: artwork stays completely visible, no opaque masking. */
+.book-page.new-index{background:#fff8ed url('toc-background.png?v=blank29') center center/100% 100% no-repeat!important}
+.book-page.new-index .index-leaf{background:transparent!important;isolation:auto;padding:clamp(24px,3vw,42px) clamp(42px,5.1vw,78px)!important}
+.book-page.new-index .index-leaf::before{display:none!important}
+.book-page.new-index .contents-header{background:transparent!important;box-shadow:none!important}
+.book-page.new-index .index-right .contents-header{visibility:hidden;min-height:clamp(45px,6vw,88px)}
+.book-page.new-index .contents-script{font-family:'Caveat',cursive;font-size:clamp(28px,3.3vw,49px);color:#345c28;text-shadow:0 1px 0 #fff8ed}
+.book-page.new-index .contents-header p{display:none!important}
+.book-page.new-index .contents-food{display:none!important}
+.book-page.new-index .contents-group-title h2{font-family:'Caveat',cursive;font-weight:700;color:#1e2118;background:linear-gradient(transparent 27%,#fbd5b4 27%,#fbd5b4 84%,transparent 84%);border:0!important;text-decoration:none!important}
+.book-page.new-index .contents-recipe>span:first-child,.book-page.new-index .contents-recipe b{background:transparent!important}
+.book-page.new-index .contents-recipe{font-family:'Caveat',cursive;font-weight:700;color:#20221c}
+.book-page.new-index .contents-groups{gap:clamp(13px,1.8vw,26px)}
+.book-page.new-index .contents-footer{display:none!important}
+@media(max-width:760px){
+.book-page.new-index .index-leaf{padding:22px 32px!important}
+.book-page.new-index .index-right .contents-header{min-height:50px}
+.book-page.new-index .contents-script{font-size:clamp(27px,7.3vw,40px)}
+}
