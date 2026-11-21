@@ -2,8 +2,8 @@
 // Add new entries here; the contents pages update automatically.
 const RECIPES = [
   { id: 'palak-paneer', name: 'Palak Paneer', category: 'Curries and Sabzis', image: 'images/Palak Paneer.jpg' },
-  { id: 'paneer-chilli-milli', name: 'Paneer Chilli Milli', category: 'Curries and Sabzis', image: 'images/Paneer Chilli Milli.jpg' },
-  { id: 'pitla', name: 'Pitla', category: 'Comfort Food', image: 'images/Pitla.jpg' },
+  { id: 'paneer-chilli-milli', name: 'Paneer Chilli Milli', category: 'Curries and Sabzis', image: 'images/Paneer Chilli Milli.jpg', link: 'https://www.instagram.com/reel/DUFTGqhinHn/' },
+  { id: 'pitla', name: 'Pitla', category: 'Comfort Food', image: 'images/Pitla.jpg', link: 'https://www.instagram.com/reel/C3CUuOkSsfj/' },
   { id: 'rajasthani-dahi-tikhari', name: 'Rajasthani Dahi Tikhari', category: 'Curries and Sabzis', image: 'images/Rajasthani Dahi Tikhari.jpg' },
   { id: 'rasam', name: 'Rasam', category: 'Comfort Food', image: 'images/Rasam.jpg' },
   { id: 'soya-tikka-curry', name: 'Soya Tikka Curry', category: 'Curries and Sabzis', image: 'images/Soya Tikka Curry.jpg' },
@@ -15,7 +15,7 @@ const RECIPES = [
   { id: 'besan-chilla', name: 'Besan Chilla', category: 'Breakfast', image: 'images/Besan Chilla.jpg' },
   { id: 'aloo-toast', name: 'Aloo Toast', category: 'Sandwiches', image: 'images/Aloo Toast.jpg' },
   { id: 'avocado-toast', name: 'Avocado Toast', category: 'Sandwiches', image: 'images/Avocado Toast.jpg' },
-  { id: 'chickpea-sandwich', name: 'Chickpea Sandwich', category: 'Sandwiches', image: 'images/Chickpea Sandwich.jpg' },
+  { id: 'chickpea-sandwich', name: 'Chickpea Sandwich', category: 'Sandwiches', image: 'images/Chickpea Sandwich.jpg', link: 'https://www.instagram.com/reel/DXOuKJWCO21/' },
   { id: 'creamy-spinach-corn-sandwich', name: 'Creamy Spinach Corn Sandwich', category: 'Sandwiches', image: 'images/Creamy Spinach Corn Sandwich.jpg' },
   { id: 'paneer-toastie', name: 'Paneer Toastie', category: 'Sandwiches', image: 'images/Paneer Toastie.jpg' },
   { id: 'hariyali-soya-chunks-pulav', name: 'Hariyali Soya Chunks Pulav', category: 'Rice Dishes', image: 'images/Hariyali Soya Chunks Pulav.jpg' },
