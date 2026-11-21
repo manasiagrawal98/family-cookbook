@@ -49,3 +49,9 @@
 .book.zoomed .recipe-page{overflow:auto;align-items:flex-start;justify-content:flex-start}
 .book.zoomed .recipe-page .original-art{width:112%;height:auto;max-width:none;max-height:none;flex-shrink:0;object-fit:contain;aspect-ratio:auto}
 @media(max-width:760px){.reader-header{align-items:flex-start}.header-actions{gap:5px}.header-actions .toc{font-size:12px;padding:8px 10px}}
+
+/* Taller book experiment: preserve width, increase page height by ~20%. */
+@media(min-width:761px){.book{width:min(100%,calc((100dvh - 150px)*2.7));aspect-ratio:2.25/1}}
+@media(max-width:760px){.book{width:min(100%,calc((100dvh - 145px)*1.35));aspect-ratio:1.12/1}}
+/* Temporarily stretch artwork to fill the taller page; source PNGs are untouched. */
+.recipe-page .original-art{width:100%;height:100%;max-width:none;object-fit:fill;aspect-ratio:auto}
