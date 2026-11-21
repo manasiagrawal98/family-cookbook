@@ -280,3 +280,43 @@ html,body{overflow-x:hidden}
 .book>.book-page.cover{display:grid!important;place-items:center!important}
 .reader-controls{margin-top:10px}
 }
+
+/* Final contents design: recipe artwork's handwritten typography, leafy border, highlights and rings. */
+.new-index .index-leaf{padding:clamp(18px,2.5vw,32px) clamp(24px,3vw,42px)!important;background:radial-gradient(ellipse at 35% 30%,#fffef6,#fff8e8 90%)!important;overflow:hidden}
+.new-index .contents-header{position:relative;z-index:2;text-align:center;margin-bottom:clamp(6px,.9vw,12px);flex-shrink:0}
+.new-index .contents-script{font:700 clamp(27px,3.7vw,51px)/.9 Caveat,cursive;color:#316323}
+.new-index .contents-heart{font:700 clamp(25px,3vw,43px) Caveat,cursive;color:#b83d35;margin-left:5px}
+.new-index .contents-header p{display:table;margin:clamp(4px,.5vw,8px) auto 0;background:#eff0b4c9;border-radius:50% 45% 55% 35%;padding:2px 16px;font:700 clamp(12px,1.4vw,19px) Caveat,cursive;color:#4a4931}
+.new-index .contents-groups{position:relative;z-index:2;display:flex;flex-direction:column;justify-content:flex-start;gap:clamp(10px,1.5vw,21px);min-height:0;flex:1}
+.new-index .contents-group{min-height:0;flex-shrink:0}
+.new-index .contents-group-title{display:flex;align-items:center;gap:clamp(5px,.9vw,12px);margin-bottom:clamp(4px,.65vw,9px)}
+.new-index .contents-food{font-size:clamp(23px,3.6vw,48px);line-height:1;filter:drop-shadow(2px 2px 2px #a58e7044)}
+.new-index .contents-group-title h2{font:700 clamp(22px,2.75vw,38px)/.95 Caveat,cursive;color:#336c31;margin:0;background:#e9efb9b0;border-radius:40% 55% 35% 40%;padding:3px 9px;overflow-wrap:anywhere}
+.new-index .contents-group-title small{font-size:.6em}
+.new-index .contents-recipe-lines{padding-left:clamp(10px,1.6vw,22px);display:flex;flex-direction:column;gap:clamp(3px,.45vw,7px)}
+.new-index .contents-recipe{display:flex;align-items:baseline;gap:6px;padding:0;border:0;background:transparent;text-align:left;width:100%;min-width:0;color:#32271f;font:700 clamp(15px,1.65vw,23px)/1.07 Caveat,cursive;cursor:pointer}
+.new-index .contents-recipe>span:first-child{min-width:0;overflow-wrap:anywhere}
+.new-index .contents-dots{flex:1;min-width:5px;border-bottom:1px dotted #bba77f}
+.new-index .contents-recipe b{font-size:.75em;color:#795235;background:#f6d49b;border-radius:50%;min-width:1.7em;height:1.7em;display:inline-flex;align-items:center;justify-content:center}
+.new-index .contents-recipe:hover>span:first-child{text-decoration:underline}
+.new-index .contents-coming{font:700 italic clamp(13px,1.45vw,20px) Caveat,cursive;color:#a18e70}
+.new-index .contents-footer{position:relative;z-index:2;margin-top:auto;padding-top:clamp(5px,.9vw,12px);font:700 clamp(12px,1.35vw,18px) Caveat,cursive;color:#ad705c;text-align:center}
+.new-index .contents-empty{margin:auto;text-align:center;font:700 clamp(20px,2vw,29px) Caveat,cursive;color:#6c8a58}
+/* Decorative flourishes must never cover the interactive recipe names. */
+.new-index .index-botanical{opacity:.5!important;z-index:1!important}
+.new-index .index-binding{z-index:20!important}
+@media(max-width:760px){
+.new-index .index-leaf{padding:18px 23px!important}
+.new-index .contents-header{margin-bottom:9px}
+.new-index .contents-script{font-size:clamp(30px,8.2vw,44px)}
+.new-index .contents-heart{font-size:29px}
+.new-index .contents-header p{font-size:15px;padding:2px 9px}
+.new-index .contents-groups{gap:14px}
+.new-index .contents-food{font-size:32px}
+.new-index .contents-group-title{gap:7px;margin-bottom:7px}
+.new-index .contents-group-title h2{font-size:clamp(24px,6.5vw,34px)}
+.new-index .contents-recipe-lines{padding-left:9px;gap:6px}
+.new-index .contents-recipe{font-size:clamp(17px,4.5vw,23px)}
+.new-index .contents-coming{font-size:16px}
+.new-index .contents-footer{font-size:14px;padding-top:6px}
+}
