@@ -1,6 +1,13 @@
 // Each entry is one complete illustrated 16:9 recipe spread.
 // Add new entries here; the contents pages update automatically.
 const RECIPES = [
+  { id: 'palak-paneer', name: 'Palak Paneer', category: 'Curries and Sabzis', image: 'images/Palak Paneer.jpg' },
+  { id: 'paneer-chilli-milli', name: 'Paneer Chilli Milli', category: 'Curries and Sabzis', image: 'images/Paneer Chilli Milli.jpg' },
+  { id: 'pitla', name: 'Pitla', category: 'Comfort Food', image: 'images/Pitla.jpg' },
+  { id: 'rajasthani-dahi-tikhari', name: 'Rajasthani Dahi Tikhari', category: 'Curries and Sabzis', image: 'images/Rajasthani Dahi Tikhari.jpg' },
+  { id: 'rasam', name: 'Rasam', category: 'Comfort Food', image: 'images/Rasam.jpg' },
+  { id: 'soya-tikka-curry', name: 'Soya Tikka Curry', category: 'Curries and Sabzis', image: 'images/Soya Tikka Curry.jpg' },
+  { id: 'tomato-soup', name: 'Tomato Soup', category: 'Comfort Food', image: 'images/Tomato Soup.jpg' },
   { id: 'mocha-overnight-oats', name: 'Mocha Overnight Oats', category: 'Breakfast', image: 'images/Mocha Overnight Oats.jpg' },
   { id: 'moong-dal-chilla', name: 'Moong Dal Chilla', category: 'Breakfast', image: 'images/Moong Dal Chilla.jpg' },
   { id: 'jini-dosa-sandwich', name: 'Jini Dosa Sandwich', category: 'Sandwiches', image: 'images/Jini Dosa Sandwich.jpg' },
