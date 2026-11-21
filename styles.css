@@ -73,3 +73,52 @@
 /* Uploaded artwork fills one entire 16:9 book spread without distortion. */
 .book-page.recipe-page.full-spread{padding:0;width:100%;height:100%;overflow:hidden;background:#fff9ef}
 .recipe-page.full-spread .original-art{display:block;width:100%;height:100%;max-width:100%;object-fit:contain;margin:0}
+
+/* Illustrated, open-book contents matching the recipe spreads. */
+.book-page.illustrated-contents{display:grid;grid-template-columns:1fr 1fr;padding:0;background:#fff9ec;overflow:hidden}
+.illustrated-contents:before{content:none}
+.contents-leaf{position:relative;min-width:0;min-height:0;display:flex;flex-direction:column;padding:clamp(12px,2.5vw,34px);background:radial-gradient(ellipse at 25% 15%,#fffef5,#fff8e8 80%);overflow:hidden}
+.contents-left{box-shadow:inset -12px 0 20px -18px #624a36}
+.contents-right{box-shadow:inset 12px 0 20px -18px #624a36;border-left:2px solid #d9c7a9}
+.contents-vine{font-size:clamp(13px,1.7vw,25px);color:#77965a;line-height:1.2}
+.contents-right .contents-vine{text-align:right}
+.contents-kicker{font:700 clamp(8px,.9vw,13px) Nunito,sans-serif;letter-spacing:.09em;text-transform:uppercase;margin-top:clamp(4px,.6vw,10px)}
+.contents-heading{font:700 clamp(28px,4.7vw,64px)/.9 Caveat,cursive;color:#416d32;margin:clamp(5px,.8vw,14px) 0 0;transform:rotate(-2deg)}
+.contents-heading span{color:#c64c39;font-size:.65em}
+.contents-intro{font:600 italic clamp(9px,1.1vw,15px) Caveat,cursive;margin:clamp(3px,.5vw,8px) 0 clamp(5px,.7vw,12px);color:#7b5a41}
+.contents-category{position:relative;background:#fce5dd88;border-radius:20px;padding:clamp(5px,.8vw,12px) clamp(8px,1.1vw,16px);margin:clamp(4px,.6vw,9px) 0;min-height:0}
+.contents-category:nth-of-type(even){background:#eff2d588}
+.contents-category h3{font:700 clamp(17px,2.4vw,33px)/1 Caveat,cursive;margin:0 0 clamp(2px,.3vw,5px);color:#69402c}
+.contents-category h3 span{font-size:.6em;color:#b96a61}
+.contents-category ul{padding:0;margin:0;list-style:none}
+.contents-category .recipe-jump{font:700 clamp(9px,1.13vw,15px)/1.2 Caveat,cursive;padding:clamp(3px,.35vw,6px) 0;color:#583b2a}
+.contents-category .recipe-jump span{color:#a76c4c}
+.contents-soon{font:600 italic clamp(9px,.95vw,13px) Caveat,cursive;color:#9b8775}
+.contents-corner{margin-top:auto;opacity:.8;font-size:clamp(15px,2.7vw,35px);line-height:1.2}
+.contents-right .contents-corner{text-align:right}
+.contents-note{font:700 clamp(15px,2.2vw,29px) Caveat,cursive;color:#8c6a47;text-align:center;margin:auto 0 0;transform:rotate(-3deg)}
+.contents-note span{color:#bc7569}
+.contents-count{position:absolute;bottom:12px;right:18px;font:700 15px Caveat,cursive;color:#997d64}
+/* A hinged half-spread page turn: the leaf rotates at the center binding. */
+.book{perspective:1800px;transform-style:preserve-3d}
+.turn-overlay{position:absolute;inset:0;z-index:20;pointer-events:none;perspective:1800px;overflow:hidden}
+.turn-half{position:absolute;top:0;bottom:0;width:50%;overflow:hidden}
+.turn-half .book-page{position:absolute;top:0;left:0;width:200%;height:100%;max-height:none;min-height:0;border:0;box-shadow:none}
+.turn-half .book-page:before{display:none}
+.turn-forward .turn-static{left:0}
+.turn-backward .turn-static{right:0}
+.turn-backward .turn-static .book-page{left:-100%}
+.turn-leaf{transform-style:preserve-3d;backface-visibility:visible}
+.turn-forward .turn-leaf{right:0;transform-origin:left center;animation:turnLeafForward .9s cubic-bezier(.25,.65,.2,1) both}
+.turn-backward .turn-leaf{left:0;transform-origin:right center;animation:turnLeafBackward .9s cubic-bezier(.25,.65,.2,1) both}
+.turn-face{position:absolute;inset:0;overflow:hidden;backface-visibility:hidden;background:#fff9ef;box-shadow:0 0 24px #3b291b38}
+.turn-face .book-page{width:200%}
+.turn-forward .turn-front .book-page{left:-100%}
+.turn-forward .turn-back .book-page{left:0}
+.turn-backward .turn-front .book-page{left:0}
+.turn-backward .turn-back .book-page{left:-100%}
+.turn-back{transform:rotateY(180deg)}
+@keyframes turnLeafForward{0%{transform:rotateY(0deg)}48%{transform:rotateY(-90deg)}100%{transform:rotateY(-180deg)}}
+@keyframes turnLeafBackward{0%{transform:rotateY(0deg)}48%{transform:rotateY(90deg)}100%{transform:rotateY(180deg)}}
+@media(max-width:760px){.contents-leaf{padding:8px}.contents-category{border-radius:8px;padding:3px 5px;margin:3px 0}.contents-heading{font-size:clamp(20px,5vw,32px)}.contents-category h3{font-size:clamp(12px,3vw,20px)}.contents-category .recipe-jump{font-size:clamp(8px,1.9vw,12px);padding:2px 0}.contents-note{font-size:clamp(11px,2.5vw,18px)}.contents-vine{font-size:13px}.contents-corner{font-size:15px}.contents-kicker{font-size:7px}.contents-intro{font-size:9px}}
+@media(prefers-reduced-motion:reduce){.turn-overlay{display:none!important}}
