@@ -155,3 +155,28 @@
 .illustrated-contents:before{left:calc(50% - 13px);width:26px;background:linear-gradient(90deg,transparent,#ad997a50 38%,#e7d5b6 49%,#947c5b66 55%,transparent)!important}
 .illustrated-contents:after{left:calc(50% - 6px);width:12px;background:radial-gradient(ellipse 4px 13px at center 19%,transparent 48%,#9a8364 55%,#9a8364 67%,transparent 75%),radial-gradient(ellipse 4px 13px at center 50%,transparent 48%,#9a8364 55%,#9a8364 67%,transparent 75%),radial-gradient(ellipse 4px 13px at center 81%,transparent 48%,#9a8364 55%,#9a8364 67%,transparent 75%)}
 @media(max-width:760px){.illustrated-contents{border-width:4px;border-radius:10px}.contents-leaf{padding:7px}.contents-category{grid-template-columns:25px minmax(0,1fr);gap:3px;border-width:1px;border-radius:9px;padding:4px;margin:4px 0}.category-art{font-size:21px}.contents-category h3{font-size:clamp(11px,2.5vw,18px);padding:1px 4px;margin-bottom:2px}.contents-category .recipe-jump{font-size:clamp(8px,1.8vw,12px)}.contents-intro{font-size:8px;padding:2px 4px}.contents-heading{font-size:clamp(21px,5vw,35px)}.contents-soon{font-size:8px}.contents-right .contents-note{padding:3px}}
+
+/* New contents design: calm, hand-lettered recipe index with watercolor accents. */
+.book-page.new-index{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);padding:0;border:0;border-radius:0;background:#fff9ef;overflow:hidden;position:relative}
+.new-index .index-leaf{position:relative;min-width:0;min-height:0;display:flex;flex-direction:column;padding:clamp(12px,2.6vw,36px) clamp(16px,3.1vw,44px);overflow:hidden;background:radial-gradient(ellipse at 22% 14%,#fffef9,#fff8e9 85%)}
+.new-index .index-left{box-shadow:inset -13px 0 22px -21px #765d42}
+.new-index .index-right{box-shadow:inset 13px 0 22px -21px #765d42}
+.new-index .index-topline{font:800 clamp(7px,.75vw,11px) Nunito,sans-serif;color:#9c8c72;letter-spacing:.11em;text-align:center;white-space:nowrap}
+.new-index .index-illustration{font:400 clamp(24px,4.3vw,60px) Caveat,cursive;color:#91a879;text-align:center;margin:clamp(5px,1.3vw,17px) 0 0;line-height:1}
+.new-index .index-category{font:700 clamp(23px,3.6vw,52px)/1 Caveat,cursive;color:#52734a;text-align:center;margin:clamp(5px,.9vw,12px) 0 0;overflow-wrap:anywhere}
+.new-index .index-underline{width:65%;height:10px;max-height:1.3vw;border-radius:50%;background:#f6d8ad99;align-self:center;transform:rotate(-2deg);margin:clamp(2px,.5vw,7px) 0 clamp(9px,1.5vw,20px)}
+.new-index .index-recipe-list{display:flex;flex-direction:column;gap:clamp(5px,1.2vw,17px);min-height:0}
+.new-index .index-entry{display:flex;align-items:baseline;gap:clamp(3px,.65vw,9px);width:100%;min-width:0;padding:0;border:0;background:transparent;color:#634b38;text-align:left;font:700 clamp(13px,1.65vw,23px)/1.1 Caveat,cursive;cursor:pointer}
+.new-index .index-entry-name{min-width:0;overflow-wrap:anywhere;flex:0 1 auto}
+.new-index .index-entry-dots{flex:1 1 auto;min-width:8px;border-bottom:1px dotted #bca88d;transform:translateY(-3px)}
+.new-index .index-entry-number{flex:0 0 auto;font-size:.85em;color:#a16f58}
+.new-index .index-entry:hover .index-entry-name{text-decoration:underline;text-decoration-color:#b48b69}
+.new-index .index-coming{font:600 italic clamp(13px,1.6vw,22px) Caveat,cursive;color:#ad967f;text-align:center;margin:clamp(14px,2vw,28px) 0}
+.new-index .index-bottom{margin-top:auto;text-align:center;font:700 clamp(11px,1.25vw,18px) Caveat,cursive;color:#8ba278;padding-top:8px}
+.new-index .index-bottom span{color:#a88c76;margin:0 6px}
+.new-index .index-spread-number{position:absolute;right:clamp(9px,1.6vw,22px);bottom:clamp(7px,1.2vw,16px);font:700 clamp(9px,1vw,14px) Caveat,cursive;color:#a18d78}
+.book-page.new-index:before{content:""!important;display:block!important;position:absolute;left:calc(50% - 9px);top:0;bottom:0;width:18px;z-index:8;pointer-events:none;background:linear-gradient(90deg,transparent,#a18b6c40 35%,#d6c3a3 49%,#a18b6c40 65%,transparent)}
+.book-page.new-index:after{content:"";position:absolute;left:calc(50% - 5px);top:0;bottom:0;width:10px;z-index:9;pointer-events:none;background:radial-gradient(ellipse 3px 12px at center 19%,transparent 52%,#aa9270 60%,#aa9270 70%,transparent 77%),radial-gradient(ellipse 3px 12px at center 50%,transparent 52%,#aa9270 60%,#aa9270 70%,transparent 77%),radial-gradient(ellipse 3px 12px at center 81%,transparent 52%,#aa9270 60%,#aa9270 70%,transparent 77%)}
+.new-index .index-empty{justify-content:center;align-items:center;color:#8b9b78;font:700 clamp(16px,2.3vw,30px) Caveat,cursive;text-align:center}
+.new-index .index-flourish{font-size:2.5em}
+@media(max-width:760px){.new-index .index-leaf{padding:6px 9px}.new-index .index-topline{font-size:5px;letter-spacing:0}.new-index .index-illustration{font-size:17px;margin-top:3px}.new-index .index-category{font-size:clamp(12px,3vw,22px);margin-top:2px}.new-index .index-underline{height:4px;margin:2px 0 5px}.new-index .index-recipe-list{gap:clamp(2px,.6vw,5px)}.new-index .index-entry{font-size:clamp(8px,1.85vw,13px);gap:2px}.new-index .index-bottom{font-size:7px;padding-top:2px}.new-index .index-coming{font-size:10px;margin:5px 0}.new-index .index-spread-number{font-size:8px}}
