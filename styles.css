@@ -180,3 +180,18 @@
 .new-index .index-empty{justify-content:center;align-items:center;color:#8b9b78;font:700 clamp(16px,2.3vw,30px) Caveat,cursive;text-align:center}
 .new-index .index-flourish{font-size:2.5em}
 @media(max-width:760px){.new-index .index-leaf{padding:6px 9px}.new-index .index-topline{font-size:5px;letter-spacing:0}.new-index .index-illustration{font-size:17px;margin-top:3px}.new-index .index-category{font-size:clamp(12px,3vw,22px);margin-top:2px}.new-index .index-underline{height:4px;margin:2px 0 5px}.new-index .index-recipe-list{gap:clamp(2px,.6vw,5px)}.new-index .index-entry{font-size:clamp(8px,1.85vw,13px);gap:2px}.new-index .index-bottom{font-size:7px;padding-top:2px}.new-index .index-coming{font-size:10px;margin:5px 0}.new-index .index-spread-number{font-size:8px}}
+
+/* Hand-drawn family cookbook trim and a clearly visible stitched spine. */
+.book-page.new-index{border:0!important;border-radius:0!important}
+.new-index .index-leaf{isolation:isolate}
+.new-index .index-border{position:absolute;inset:clamp(7px,1.2vw,17px);border:2px solid #c9b38e;border-radius:45% 12px 14px 10px / 12px 15px 10px 15px;box-shadow:inset 0 0 0 4px #fffaf1,inset 0 0 0 5px #e9d8b7;pointer-events:none;z-index:0;opacity:.82}
+.new-index .index-leaf>*:not(.index-border):not(.index-doodle){position:relative;z-index:1}
+.new-index .index-doodle{position:absolute;z-index:1;color:#77976b;opacity:.65;font:700 clamp(15px,2.3vw,32px) Caveat,cursive;pointer-events:none;line-height:1}
+.new-index .index-doodle-top{top:clamp(10px,1.8vw,25px);left:clamp(10px,2vw,28px);transform:rotate(-22deg)}
+.new-index .index-doodle-bottom{bottom:clamp(12px,2vw,27px);right:clamp(14px,2vw,30px);color:#bd8b7d;transform:rotate(12deg)}
+.new-index .index-topline{margin-top:clamp(4px,.6vw,8px)}
+.new-index .index-binding{position:absolute;left:calc(50% - 13px);top:0;bottom:0;width:26px;z-index:15;pointer-events:none;background:linear-gradient(90deg,#90765c22,#826a4d6b 20%,#f7ead4 42%,#ad9472 55%,#81684a66 79%,#90765c22);box-shadow:0 0 8px #66513a22}
+.new-index .index-binding i{position:absolute;left:4px;width:18px;height:22px;border:3px solid #8f7859;border-left-color:#c6ae8b;border-right-color:#7f694c;border-radius:50%;box-shadow:1px 1px 1px #fff8e9,inset 0 1px 2px #ffffff66;background:transparent}
+.new-index .index-binding i:nth-child(1){top:12%}.new-index .index-binding i:nth-child(2){top:30%}.new-index .index-binding i:nth-child(3){top:48%}.new-index .index-binding i:nth-child(4){top:66%}.new-index .index-binding i:nth-child(5){top:84%}
+.new-index .index-category{color:#52734a}
+@media(max-width:760px){.new-index .index-border{inset:4px;border-width:1px;box-shadow:none}.new-index .index-doodle{font-size:10px}.new-index .index-doodle-top{top:5px;left:6px}.new-index .index-doodle-bottom{bottom:6px;right:6px}.new-index .index-binding{width:12px;left:calc(50% - 6px)}.new-index .index-binding i{width:9px;height:12px;left:1px;border-width:1.5px}.new-index .index-topline{margin-top:3px}}
