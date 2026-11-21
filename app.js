@@ -6,7 +6,7 @@ const contents=[];
 // Groups are split before rendering, so additional recipes never clip the contents.
 const leaves=[];let leaf=[],rows=0;
 function flushLeaf(){if(leaf.length){leaves.push(leaf);leaf=[];rows=0}}
-cats.forEach((category,catIndex)=>{const all=RECIPES.filter(r=>r.category===category);const chunks=[];if(!all.length)chunks.push([]);else for(let i=0;i<all.length;i+=5)chunks.push(all.slice(i,i+5));chunks.forEach((items,k)=>{const cost=Math.max(1,items.length)+1;if(leaf.length>=2||rows+cost>7)flushLeaf();leaf.push({category,catIndex,items,continued:k>0});rows+=cost})});flushLeaf();
+cats.forEach((category,catIndex)=>{const all=RECIPES.filter(r=>r.category===category);const chunks=[];if(!all.length)chunks.push([]);else for(let i=0;i<all.length;i+=6)chunks.push(all.slice(i,i+6));chunks.forEach((items,k)=>{const cost=Math.max(1,items.length)+1;if(leaf.length>=2||rows+cost>9)flushLeaf();leaf.push({category,catIndex,items,continued:k>0});rows+=cost})});flushLeaf();
 for(let i=0;i<leaves.length;i+=2)contents.push({type:'contents',left:leaves[i],right:leaves[i+1]||[]});
 const pages=[{type:'cover'},...contents,...RECIPES.map(r=>({type:'recipe',recipe:r}))];
 // Cover is physical page 1; each contents/recipe spread occupies two pages.
