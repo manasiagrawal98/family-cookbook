@@ -237,3 +237,30 @@
 .new-index .index-binding i{left:-9px;width:40px;height:13px;border-width:2px}
 .reader-hint{font-size:12px}
 }
+
+/* Contents structure mirrors the illustrated Chickpea Sandwich spread. */
+.book-page.new-index .index-leaf{padding:clamp(18px,2.6vw,34px) clamp(19px,2.9vw,40px);background:#fff9e9;display:flex;flex-direction:column}
+.new-index .index-border{position:absolute;inset:clamp(9px,1.5vw,20px);border:1.5px solid #b3a775;border-radius:24px 16px 21px 14px;box-shadow:none;z-index:0;pointer-events:none}
+.new-index .index-botanical{position:absolute;z-index:1;font-size:clamp(27px,4.6vw,62px);opacity:.82;pointer-events:none}
+.new-index .index-botanical-top{top:2%;left:2%;transform:rotate(-35deg)}
+.new-index .index-botanical-bottom{bottom:1%;right:2%;transform:rotate(140deg)}
+.new-index .index-right .index-botanical-top{left:auto;right:2%;transform:rotate(40deg)}
+.new-index .index-right .index-botanical-bottom{right:auto;left:2%;transform:rotate(-135deg)}
+.new-index .index-heading-area{position:relative;z-index:2;text-align:center;margin:0 auto clamp(10px,1.4vw,20px);width:92%}
+.new-index .index-category{font:700 clamp(30px,4.5vw,64px)/.86 Caveat,cursive;color:#326526;margin:0;overflow-wrap:break-word;text-align:center}
+.new-index .index-heart{color:#b63f37;font-size:.7em}
+.new-index .index-subtitle{font:700 clamp(12px,1.5vw,21px)/1.15 Caveat,cursive;background:#f0efb9a8;border-radius:40%;display:inline-block;padding:clamp(3px,.5vw,7px) clamp(9px,1.2vw,17px);margin:clamp(6px,1vw,13px) 0 0}
+.new-index .index-layout{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,.75fr);gap:clamp(5px,1vw,14px);flex:1;min-height:0;align-items:start}
+.new-index .index-list-panel{min-width:0;min-height:0}
+.new-index .index-list-heading{font:700 clamp(21px,2.6vw,36px)/1 Caveat,cursive;color:#316c35;background:#eaf0b5;border-radius:35%;display:inline-block;padding:0 8px;margin:0 0 clamp(7px,1.2vw,16px)}
+.new-index .index-recipe-list{padding:0;gap:clamp(6px,1.2vw,16px);display:flex;flex-direction:column}
+.new-index .index-entry{display:flex;gap:5px;justify-content:space-between;align-items:baseline;font:700 clamp(15px,1.75vw,24px)/1.05 Caveat,cursive;color:#28251f;text-align:left;min-width:0}
+.new-index .index-entry-name{overflow-wrap:anywhere;min-width:0}
+.new-index .index-entry-number{flex:none;background:#f9d6a0;border-radius:50%;font-size:.75em;min-width:1.6em;height:1.6em;display:inline-flex;align-items:center;justify-content:center}
+.new-index .index-art-panel{min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(8px,1.4vw,19px);padding-top:clamp(9px,1.5vw,21px);border-left:1px dashed #cbb994}
+.new-index .index-food-art{font-size:clamp(40px,6.7vw,90px);line-height:1.1;filter:drop-shadow(3px 5px 3px #806b4b44)}
+.new-index .index-art-sparkle{font:700 clamp(19px,2.5vw,34px) Caveat,cursive;color:#bb6b55}
+.new-index .index-art-caption{font:700 clamp(14px,2vw,27px) Caveat,cursive;color:#487b3c;transform:rotate(-8deg)}
+.new-index .index-bottom{position:relative;z-index:2;margin-top:auto;font:700 clamp(13px,1.6vw,22px) Caveat,cursive;color:#b6654d}
+.new-index .index-binding{z-index:20}
+@media(max-width:760px){.book-page.new-index .index-leaf{padding:17px 21px}.new-index .index-border{inset:8px}.new-index .index-botanical{font-size:29px}.new-index .index-heading-area{margin-bottom:11px}.new-index .index-category{font-size:clamp(29px,8vw,42px)}.new-index .index-subtitle{font-size:15px;padding:3px 8px;margin-top:7px}.new-index .index-layout{gap:7px}.new-index .index-list-heading{font-size:24px;margin-bottom:9px}.new-index .index-recipe-list{gap:9px}.new-index .index-entry{font-size:clamp(17px,4.5vw,23px)}.new-index .index-food-art{font-size:50px}.new-index .index-art-sparkle{font-size:20px}.new-index .index-art-caption{font-size:17px}.new-index .index-bottom{font-size:15px}}
