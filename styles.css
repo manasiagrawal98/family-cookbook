@@ -396,3 +396,15 @@ html,body{overflow-x:hidden}
 .book-page.new-index .index-right .contents-header{min-height:50px}
 .book-page.new-index .contents-script{font-size:clamp(27px,7.3vw,40px)}
 }
+
+/* Tighter TOC pagination and balanced use of both pages. */
+.book-page.new-index .index-leaf{justify-content:center!important;gap:clamp(5px,.7vw,10px)!important}
+.book-page.new-index .contents-groups{flex:0 1 auto!important;min-height:0;justify-content:space-evenly!important;gap:clamp(13px,1.6vw,23px)!important}
+.book-page.new-index .index-right .contents-header{display:none!important;min-height:0!important}
+.book-page.new-index .contents-group{flex-shrink:0;margin-bottom:0!important}
+.book-page.new-index .contents-recipe-lines{gap:clamp(4px,.52vw,8px)!important}
+@media(max-width:760px){
+.book-page.new-index .index-leaf{justify-content:center!important}
+.book-page.new-index .contents-groups{gap:12px!important}
+.book-page.new-index .contents-recipe-lines{gap:5px!important}
+}
