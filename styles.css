@@ -408,3 +408,11 @@ html,body{overflow-x:hidden}
 .book-page.new-index .contents-groups{gap:12px!important}
 .book-page.new-index .contents-recipe-lines{gap:5px!important}
 }
+
+/* Compact grouped sections; no artificial space above Sandwiches or Comfort Food. */
+.book-page.new-index .index-leaf{justify-content:center!important;gap:clamp(4px,.5vw,8px)!important}
+.book-page.new-index .contents-groups{flex:0 1 auto!important;justify-content:flex-start!important;gap:clamp(7px,.85vw,13px)!important}
+.book-page.new-index .contents-group{margin:0!important}
+.book-page.new-index .contents-group-title{margin-bottom:clamp(3px,.4vw,6px)!important}
+.book-page.new-index .contents-header{margin:0 0 clamp(7px,1vw,14px)!important}
+@media(max-width:760px){.book-page.new-index .contents-groups{gap:8px!important}.book-page.new-index .contents-header{margin-bottom:9px!important}}
