@@ -1,6 +1,10 @@
 // Each entry is one complete illustrated 16:9 recipe spread.
 // Add new entries here; the contents pages update automatically.
 const RECIPES = [
+  { id: 'mocha-overnight-oats', name: 'Mocha Overnight Oats', category: 'Breakfast', image: 'images/Mocha Overnight Oats.jpg' },
+  { id: 'moong-dal-chilla', name: 'Moong Dal Chilla', category: 'Breakfast', image: 'images/Moong Dal Chilla.jpg' },
+  { id: 'jini-dosa-sandwich', name: 'Jini Dosa Sandwich', category: 'Sandwiches', image: 'images/Jini Dosa Sandwich.jpg' },
+  { id: 'nepali-chaukani', name: 'Nepali Chaukani', category: 'Around the World', image: 'images/Nepali Chaukani.jpg' },
   { id: 'besan-chilla', name: 'Besan Chilla', category: 'Breakfast', image: 'images/Besan Chilla.jpg' },
   { id: 'aloo-toast', name: 'Aloo Toast', category: 'Sandwiches', image: 'images/Aloo Toast.jpg' },
   { id: 'avocado-toast', name: 'Avocado Toast', category: 'Sandwiches', image: 'images/Avocado Toast.jpg' },
