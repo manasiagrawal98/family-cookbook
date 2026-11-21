@@ -264,3 +264,19 @@
 .new-index .index-bottom{position:relative;z-index:2;margin-top:auto;font:700 clamp(13px,1.6vw,22px) Caveat,cursive;color:#b6654d}
 .new-index .index-binding{z-index:20}
 @media(max-width:760px){.book-page.new-index .index-leaf{padding:17px 21px}.new-index .index-border{inset:8px}.new-index .index-botanical{font-size:29px}.new-index .index-heading-area{margin-bottom:11px}.new-index .index-category{font-size:clamp(29px,8vw,42px)}.new-index .index-subtitle{font-size:15px;padding:3px 8px;margin-top:7px}.new-index .index-layout{gap:7px}.new-index .index-list-heading{font-size:24px;margin-bottom:9px}.new-index .index-recipe-list{gap:9px}.new-index .index-entry{font-size:clamp(17px,4.5vw,23px)}.new-index .index-food-art{font-size:50px}.new-index .index-art-sparkle{font-size:20px}.new-index .index-art-caption{font-size:17px}.new-index .index-bottom{font-size:15px}}
+
+/* Mobile reader fix: actual scrollable landscape artwork at legible half-spread scale. */
+@media(max-width:760px){
+html,body{overflow-x:hidden}
+.reader{max-width:100%;padding:8px 6px 22px}
+.reader-header{margin-bottom:8px}
+.reader-header span{font-size:22px}
+.reader-header .toc{padding:7px 10px;font-size:12px}
+.book{display:block!important;position:relative;width:100%!important;max-width:100%!important;height:calc((100vw - 12px)*9/8)!important;min-height:0!important;aspect-ratio:auto!important;overflow-x:auto!important;overflow-y:hidden!important;scroll-snap-type:x mandatory;touch-action:pan-x;scrollbar-width:thin;-webkit-overflow-scrolling:touch}
+.book>.book-page{display:block!important;position:relative;width:200%!important;min-width:200%!important;max-width:none!important;height:100%!important;min-height:0!important;max-height:none!important;overflow:hidden!important;scroll-snap-align:start}
+.book>.book-page.new-index{display:grid!important;grid-template-columns:1fr 1fr!important}
+.book>.book-page.recipe-page.full-spread{display:flex!important;align-items:center!important;justify-content:center!important;padding:0!important}
+.book>.book-page.recipe-page.full-spread .original-art{width:100%!important;height:100%!important;max-width:none!important;object-fit:contain!important}
+.book>.book-page.cover{display:grid!important;place-items:center!important}
+.reader-controls{margin-top:10px}
+}
